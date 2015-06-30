@@ -1,72 +1,199 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8" >
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<head>
+		<meta charset="utf-8" >
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!-- Título -->
-        <title>Hellow Word</title>
+		<!-- Título -->
+		<title>Hellow Word</title>
 
-        <!-- VENDOR: Bootstrap - css -->
-        <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<!-- VENDOR: Bootstrap - css -->
+		<link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-        <!-- VENDOR:  -->
-        <link href="assets/vendor/bootstrap/awesome/css/font-awesome.min.css" rel="stylesheet">
+		<!-- VENDOR:  -->
+		<link href="assets/vendor/bootstrap/awesome/css/font-awesome.min.css" rel="stylesheet">
 
-        <!-- LIBRARY less: Less style
-        <link rel="stylesheet/less" type="text/css" href="assets/library/less/defaul.less" />
-        -->
+		<!-- LIBRARY less: Less style
+		<link rel="stylesheet/less" type="text/css" href="assets/library/less/defaul.less" />
+		-->
+	</head>
 
-    </head>
+	<body>
+		<!-- Abertura/Capa -->
+		<section class="cover row">
+			<!-- Contents da capa -->
+			<div class="cover-contents col-md-offset-2 col-md-7">
+				<!-- Textos sobre o livro -->
+				<div class="cover-contents-header">
+					<h1 class="cover-title col-md-9">Finanças Empresariais</h1>
+					<h3 class="cover-author col-md-9">Marcela Ribeiro de Albuquerque</h3>
+				</div>
 
-    <body>
+				<!-- Botões de redirecionamento -->
+				<div class="cover-content-btn  col-md-offset-8 col-md-4">
+					<p class="btn btn-danger btn-lg col-md-12"><span class="text-left col-md-9">Iniciar Leitura</span> <i class="text-right fa fa-angle-right col-md-2"></i></p>
+					<p class="btn btn-danger btn-lg col-md-12"><i class="text-left fa fa-angle-left col-md-2"></i> <span class="text-right col-md-9">Voltar ao Índice</span></p>
+				</div>
 
-        <!-- Abertura/Capa -->
-        <section class="cover">
-          <div class="cover-contents col-md-offset-2 col-md-7">
-            <!-- Textos sobre o livro -->
-            <div class="cover-contents-header">
-              <h1 class="cover-title col-md-9">Finanças Empresariais</h1>
-              <h3 class="cover-author col-md-9">Marcela Ribeiro de Albuquerque</h3>
-            </div>
+				<!-- Conteúdos do rodapé -->
+				<div class="cover-contents-footer col-md-offset-3 col-md-4">
+						<a href="#" class="cover-site col-md-6">www.unipar.br</a>
+						<img src="#" alt="UNIPAR" class="cover-logo col-md-6"/>
+				</div>
+			</div>
 
-            <!-- Botões de redirecionamento -->
-            <div class="cover-content-btn  col-md-offset-8 col-md-4">
-              <p class="btn btn-danger btn-lg col-md-12"><span class="text-left col-md-9">Iniciar Leitura</span> <i class="text-right fa fa-angle-right col-md-2"></i></p>
-              <p class="btn btn-danger btn-lg col-md-12"><i class="text-left fa fa-angle-left col-md-2"></i> <span class="text-right col-md-9">Voltar ao Índice</span></p>
-            </div>
+			<!-- Navegação da capa -->
+			<ul class="nav nav-pills nav-stacked col-md-3">
 
-            <!-- Conteúdos do rodapé -->
-            <div class="cover-contents-footer col-md-offset-3 col-md-4">
-                <a href="#" class="cover-site col-md-6">www.unipar.br</a>
-                <img src="#" alt="UNIPAR" class="cover-logo col-md-6"/>
-            </div>
-          </div>
+				<!-- Navegação: SUMÁRIO -->
+				<li class="nav-item row">
 
-          <!-- Navegação da capa -->
-          <ul class="cover-index col-md-3">
-              <li></li>
-          </ul>
-        </section>
+					<!-- Icone da navegação -->
+					<i class="text-left fa fa-list-ul col-md-2"></i>
 
-        <!-- jQuerys Plugin -->
-        <script src="assets/vendor/jquery/jquery.min.js"></script>
+					<!-- valores do item -->
+					<p class="col-md-8">
+						<span class="nav-item-titulo">Sumário</span>
+					</p>
 
-        <!-- VENDOR: Bootstrap - jquery -->
-        <script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+					<!-- Icone avançar -->
+					<i class="text-left fa fa-angle-right col-md-2"></i>
+				</li>
 
-        <!-- VENDOR: Coffee-Script - jquery
-        <script src="assets/vendor/coffee-script/coffee-script.min.js"></script>
-        -->
+				<!-- Navegação: NOSSOS OBJETIVOS -->
+				<li class="nav-item row">
 
-        <!-- VENDOR: Less - jquery
-        <script src="assets/vendor/less/less.min.js"></script>
-        -->
+					<!-- Icone da navegação -->
+					<img src="#" class="col-md-2" />
 
-        <!-- LIBRARY coffee: aplication
-        <script type="text/coffeescript" src="assets/library/coffee-script/test.coffee"></script>
-        -->
-     </body>
+					<!-- valores do item -->
+					<p class="col-md-8">
+						<span class="nav-item-titulo">Nossos objetivos</span>
+						<span class="nav-item-info">UNIPAR - EAD</span>
+					</p>
+
+					<!-- Icone avançar -->
+					<i class="text-left fa fa-angle-right col-md-2"></i>
+				</li>
+
+				<!-- Navegação: CONHECENDO A OBRA -->
+				<li class="nav-item row">
+
+					<!-- Icone da navegação -->
+					<i class="text-left fa fa-bookmark col-md-2"></i>
+
+					<!-- valores do item -->
+					<p class="col-md-8">
+						<span class="nav-item-titulo">Conhecendo a obra</span>
+						<span class="nav-item-info">Uma introdução sobre <strong>"Finanças Empres ariais"</strong></span>
+					</p>
+
+					<!-- Icone avançar -->
+					<i class="text-left fa fa-angle-right col-md-2"></i>
+				</li>
+
+				<!-- Navegação: CONHECENDO O PROFESSOR -->
+				<li class="nav-item row">
+
+					<!-- Icone da navegação -->
+					<i class="text-left fa fa-graduation-cap col-md-2"></i>
+
+					<!-- valores do item -->
+					<p class="col-md-8">
+						<span class="nav-item-titulo">Conhecendo o professor</span>
+						<span class="nav-item-info">Marcela Ribeiro de Albuquerque</span>
+						<span class="nav-item-info">Marcela Ribeiro de Albuquerque</span>
+						<span class="nav-item-info">Marcela Ribeiro de Albuquerque</span>
+					</p>
+
+					<!-- Icone avançar -->
+					<i class="text-left fa fa-angle-right col-md-2"></i>
+				</li>
+
+				<!-- Navegação: VÍDEOS E PODCASTS -->
+				<li class="nav-item row">
+
+					<!-- Icone da navegação -->
+					<i class="text-left fa fa-bullhorn col-md-2"></i>
+
+					<!-- valores do item -->
+					<p class="col-md-8">
+						<span class="nav-item-titulo">Vídeos e podcasts</span>
+						<span class="nav-item-info">Explicações do professor</span>
+					</p>
+
+					<!-- Icone avançar -->
+					<i class="text-left fa fa-angle-right col-md-2"></i>
+				</li>
+
+				<!-- Navegação: EXERCÍCIOSA -->
+				<li class="nav-item row">
+
+					<!-- Icone da navegação -->
+					<i class="text-left fa fa-pencil col-md-2"></i>
+
+					<!-- valores do item -->
+					<p class="col-md-8">
+						<span class="nav-item-titulo">Exercícios</span>
+						<span class="nav-item-info">Propostas de exercícios</span>
+					</p>
+
+					<!-- Icone avançar -->
+					<i class="text-left fa fa-angle-right col-md-2"></i>
+				</li>
+
+				<!-- Navegação: REFERENCIAS -->
+				<li class="nav-item row">
+
+					<!-- Icone da navegação -->
+					<i class="text-left fa fa-connectdevelop col-md-2"></i>
+
+					<!-- valores do item -->
+					<p class="col-md-8">
+						<span class="nav-item-titulo">Referencias</span>
+						<span class="nav-item-info">Todas as referencias usadas no livro</span>
+					</p>
+
+					<!-- Icone avançar -->
+					<i class="text-left fa fa-angle-right col-md-2"></i>
+				</li>
+
+				<!-- Navegação: AJUDA -->
+				<li class="nav-item row">
+
+					<!-- Icone da navegação -->
+					<i class="text-left fa fa-life-ring col-md-2"></i>
+
+					<!-- valores do item -->
+					<p class="col-md-8">
+						<span class="nav-item-titulo">Ajuda</span>
+						<span class="nav-item-info">Instruções para a navegação</span>
+					</p>
+
+					<!-- Icone avançar -->
+					<i class="text-left fa fa-angle-right col-md-2"></i>
+				</li>
+			</ul>
+		</section>
+
+		<!-- jQuerys Plugin -->
+		<script src="assets/vendor/jquery/jquery.min.js"></script>
+
+		<!-- VENDOR: Bootstrap - jquery -->
+		<script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+
+		<!-- VENDOR: Coffee-Script - jquery
+		<script src="assets/vendor/coffee-script/coffee-script.min.js"></script>
+		-->
+
+		<!-- VENDOR: Less - jquery
+		<script src="assets/vendor/less/less.min.js"></script>
+		-->
+
+		<!-- LIBRARY coffee: aplication
+		<script type="text/coffeescript" src="assets/library/coffee-script/test.coffee"></script>
+		-->
+	</body>
 </html>
