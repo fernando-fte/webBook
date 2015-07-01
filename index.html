@@ -21,8 +21,10 @@
 	</head>
 
 	<body>
+
 		<!-- Abertura/Capa -->
-		<section class="cover row">
+		<section data-elearn-section="capa" class="cover row">
+
 			<!-- Contents da capa -->
 			<div class="cover-contents col-md-offset-2 col-md-7">
 				<!-- Textos sobre o livro -->
@@ -46,6 +48,18 @@
 
 			<!-- Navegação da capa -->
 			<ul class="nav nav-pills nav-stacked col-md-3">
+
+				<!-- Menu principal de botões -->
+				<li class="nav-item row">
+
+					<!-- Icone para o MENU -->
+					<p class="text-left col-md-6">
+						<i class="fa fa-bars"></i>
+					</p>
+
+					<!-- Icone para instruções da pagina -->
+					<span class="text-right col-md-6" data-toggle="tooltip" data-placement="left" title="Clique aqui e entenda esta página"><i class="fa fa-question-circle"></i></span>
+				</li>
 
 				<!-- Navegação: SUMÁRIO -->
 				<li class="nav-item row">
@@ -178,11 +192,22 @@
 			</ul>
 		</section>
 
+		<nav class="nav">
+			
+		</nav>
+
+
 		<!-- jQuerys Plugin -->
 		<script src="assets/vendor/jquery/jquery.min.js"></script>
 
 		<!-- VENDOR: Bootstrap - jquery -->
 		<script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+
+		<script type="text/javascript">
+			$(function () {
+				$('[data-toggle="tooltip"]').tooltip()
+			})
+		</script>
 
 		<!-- VENDOR: Coffee-Script - jquery
 		<script src="assets/vendor/coffee-script/coffee-script.min.js"></script>
